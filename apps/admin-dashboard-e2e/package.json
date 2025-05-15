@@ -1,0 +1,10 @@
+{
+  "name": "@digital-chuckram/admin-dashboard-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@digital-chuckram/admin-dashboard"
+    ]
+  }
+}

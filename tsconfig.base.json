@@ -16,6 +16,11 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["development"]
+    "customConditions": ["development"],
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@your-workspace/*": ["libs/*/src/index.ts"]
+    }
   }
 }

@@ -2,5 +2,99 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/blockchain-node-e2e"
+    },
+    {
+      "path": "./apps/blockchain-node"
+    },
+    {
+      "path": "./apps/validator-service-e2e"
+    },
+    {
+      "path": "./apps/validator-service"
+    },
+    {
+      "path": "./apps/identity-service-e2e"
+    },
+    {
+      "path": "./apps/identity-service"
+    },
+    {
+      "path": "./apps/voting-service-e2e"
+    },
+    {
+      "path": "./apps/voting-service"
+    },
+    {
+      "path": "./apps/currency-service-e2e"
+    },
+    {
+      "path": "./apps/currency-service"
+    },
+    {
+      "path": "./apps/api-gateway-e2e"
+    },
+    {
+      "path": "./apps/api-gateway"
+    },
+    {
+      "path": "./apps/test-e2e"
+    },
+    {
+      "path": "./apps/test"
+    },
+    {
+      "path": "./apps/web-portal-e2e"
+    },
+    {
+      "path": "./apps/web-portal"
+    },
+    {
+      "path": "./apps/admin-dashboard-e2e"
+    },
+    {
+      "path": "./apps/admin-dashboard"
+    },
+    {
+      "path": "./apps/mobile-app-e2e"
+    },
+    {
+      "path": "./apps/mobile-app"
+    },
+    {
+      "path": "./apps/offline-service-e2e"
+    },
+    {
+      "path": "./apps/offline-service"
+    },
+    {
+      "path": "./libs/core/blockchain"
+    },
+    {
+      "path": "./libs/shared/types"
+    },
+    {
+      "path": "./libs/core/crypto"
+    },
+    {
+      "path": "./libs/core/consensus"
+    },
+    {
+      "path": "./libs/features/identity"
+    },
+    {
+      "path": "./libs/features/voting"
+    },
+    {
+      "path": "./libs/features/currency"
+    },
+    {
+      "path": "./libs/shared/utils"
+    },
+    {
+      "path": "./libs/core/p2p"
+    }
+  ]
 }

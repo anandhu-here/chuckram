@@ -1,0 +1,26 @@
+{
+  "name": "@digital-chuckram/currency-service-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@digital-chuckram/currency-service"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/currency-service-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@digital-chuckram/currency-service:build",
+          "@digital-chuckram/currency-service:serve"
+        ]
+      }
+    }
+  }
+}
