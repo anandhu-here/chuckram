@@ -1,91 +1,173 @@
-# DigitalChuckram
+You're right! Let me create a proper Markdown README file:
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+```markdown
+# Digital Chuckram
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+A blockchain-based digital currency and voting platform for India, built with TypeScript and modern web technologies.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+## Overview
 
-## Finish your remote caching setup
+Digital Chuckram is an experimental blockchain platform that combines digital currency with democratic voting mechanisms. The project aims to create a transparent, secure, and scalable system that could potentially serve as a national digital infrastructure.
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/xgWW0t7QVE)
+The currency is named after the historical Chuckram, an ancient Indian currency, bringing together traditional heritage with modern blockchain technology.
 
+## Current Status
 
-## Generate a library
+🚧 **This project is in early development** 🚧
 
-```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+### Completed Components
+
+- ✅ Core blockchain implementation
+- ✅ Cryptographic utilities
+- ✅ Consensus mechanism (Hybrid PoA + DPoS)
+- ✅ P2P networking layer
+- ✅ Basic type definitions
+
+### In Progress
+
+- 🔄 Transaction builder
+- 🔄 Currency denomination system
+- 🔄 Smart contracts for voting
+
+### Planned
+
+- 📋 Identity service with Aadhaar integration
+- 📋 API Gateway
+- 📋 Web and mobile interfaces
+- 📋 Admin dashboard
+
+## Tech Stack
+
+- **Language**: TypeScript
+- **Runtime**: Node.js
+- **Build System**: Nx Monorepo
+- **Backend Framework**: NestJS (planned)
+- **Frontend**: React (planned)
+- **Testing**: Jest
+- **Database**: LevelDB (current), PostgreSQL (planned)
+
+## Architecture
+
+The project follows a modular architecture with the following structure:
 ```
 
-## Run tasks
+digital-chuckram/
+├── apps/ # Applications
+│ └── [various services - in development]
+├── libs/ # Shared libraries
+│ ├── blockchain/ # Core blockchain logic
+│ ├── consensus/ # Consensus mechanism
+│ ├── crypto/ # Cryptographic utilities
+│ ├── p2p/ # Networking layer
+│ └── types/ # Shared TypeScript types
 
-To build the library use:
+````
 
-```sh
-npx nx build pkg1
+## Getting Started
+
+### Prerequisites
+
+- Node.js v20+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone [repository-url]
+cd digital-chuckram
+
+# Install dependencies
+npm install
+
+# Run tests
+nx test blockchain
+nx test consensus
+nx test p2p
+````
+
+### Development
+
+```bash
+# Test a specific library
+nx test [library-name]
+
+# Run all tests
+nx run-many -t test
+
+# Add a new library
+nx g @nrwl/node:lib [library-name]
 ```
 
-To run any task with Nx use:
+## Key Features (Planned)
 
-```sh
-npx nx <target> <project-name>
+- **Digital Currency**: Implementation of Chuckram with traditional denomination system
+- **Voting System**: Blockchain-based transparent voting mechanism
+- **Hybrid Consensus**: 50% government validators + 50% citizen validators
+- **High Performance**: Target of 10,000+ TPS
+- **Identity Integration**: Secure identity verification system
+
+## Contributing
+
+This project is in its early stages. If you're interested in contributing:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for new functionality
+5. Submit a pull request
+
+## Testing
+
+All components have comprehensive test coverage. Run tests with:
+
+```bash
+# Run all tests
+npm test
+
+# Run tests for specific component
+nx test blockchain
+nx test consensus
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+## Roadmap
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+1. **Phase 1**: Core Infrastructure (Current)
 
-## Versioning and releasing
+   - Basic blockchain
+   - Consensus mechanism
+   - Networking layer
 
-To version and release the library use
+2. **Phase 2**: Currency Implementation
+
+   - Transaction processing
+   - Denomination system
+   - Wallet functionality
+
+3. **Phase 3**: Governance Features
+
+   - Voting mechanisms
+   - Proposal system
+   - Identity integration
+
+4. **Phase 4**: User Interfaces
+   - API development
+   - Web portal
+   - Mobile applications
+
+## License
+
+This project is currently under development. License to be determined.
+
+## Contact
+
+For questions or discussions about this project, please open an issue on GitHub.
+
+---
+
+**Note**: This is an experimental project in early development. Many features are not yet implemented and the architecture may change significantly.
 
 ```
-npx nx release
+
+This is a proper Markdown README.md file. You can save this content directly as `README.md` in your project root.
 ```
-
-Pass `--dry-run` to see what would happen without actually releasing the library.
-
-[Learn more about Nx release &raquo;](hhttps://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Keep TypeScript project references up to date
-
-Nx automatically updates TypeScript [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) in `tsconfig.json` files to ensure they remain accurate based on your project dependencies (`import` or `require` statements). This sync is automatically done when running tasks such as `build` or `typecheck`, which require updated references to function correctly.
-
-To manually trigger the process to sync the project graph dependencies information to the TypeScript project references, run the following command:
-
-```sh
-npx nx sync
-```
-
-You can enforce that the TypeScript project references are always in the correct state when running in CI by adding a step to your CI job configuration that runs the following command:
-
-```sh
-npx nx sync:check
-```
-
-[Learn more about nx sync](https://nx.dev/reference/nx-commands#sync)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-# chuckram
