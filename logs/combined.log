@@ -1,0 +1,61 @@
+{"context":"WebsocketGateway","level":"info","message":"WebSocket Gateway initialized","timestamp":"2025-05-16T00:13:44.760Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"subscribe_address\" message","timestamp":"2025-05-16T00:13:44.767Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"unsubscribe_address\" message","timestamp":"2025-05-16T00:13:44.769Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"subscribe_transaction\" message","timestamp":"2025-05-16T00:13:44.770Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"unsubscribe_transaction\" message","timestamp":"2025-05-16T00:13:44.770Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"subscribe_blocks\" message","timestamp":"2025-05-16T00:13:44.771Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"unsubscribe_blocks\" message","timestamp":"2025-05-16T00:13:44.772Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/v1/auth}:","timestamp":"2025-05-16T00:13:44.777Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/auth/login, POST} route","timestamp":"2025-05-16T00:13:44.784Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/auth/register, POST} route","timestamp":"2025-05-16T00:13:44.786Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/auth/profile, GET} route","timestamp":"2025-05-16T00:13:44.788Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/auth/refresh, POST} route","timestamp":"2025-05-16T00:13:44.790Z"}
+{"context":"RoutesResolver","level":"info","message":"BlockchainController {/api/v1/blockchain}:","timestamp":"2025-05-16T00:13:44.792Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/info, GET} route","timestamp":"2025-05-16T00:13:44.794Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/blocks/latest, GET} route","timestamp":"2025-05-16T00:13:44.796Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/blocks/:height, GET} route","timestamp":"2025-05-16T00:13:44.798Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/blocks/hash/:hash, GET} route","timestamp":"2025-05-16T00:13:44.801Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/transactions/:id, GET} route","timestamp":"2025-05-16T00:13:44.803Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/transactions, POST} route","timestamp":"2025-05-16T00:13:44.805Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/addresses/:address, GET} route","timestamp":"2025-05-16T00:13:44.806Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/addresses/:address/transactions, GET} route","timestamp":"2025-05-16T00:13:44.807Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/addresses/:address/balance, GET} route","timestamp":"2025-05-16T00:13:44.809Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/validators, GET} route","timestamp":"2025-05-16T00:13:44.811Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/validators/:address, GET} route","timestamp":"2025-05-16T00:13:44.812Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/mempool, GET} route","timestamp":"2025-05-16T00:13:44.814Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/stats, GET} route","timestamp":"2025-05-16T00:13:44.815Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/admin/status, GET} route","timestamp":"2025-05-16T00:13:44.816Z"}
+{"context":"RoutesResolver","level":"info","message":"HealthController {/api/v1/health}:","timestamp":"2025-05-16T00:13:44.817Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/health, GET} route","timestamp":"2025-05-16T00:13:44.818Z"}
+{"context":"GraphQLModule","level":"info","message":"Mapped {/graphql, POST} route","timestamp":"2025-05-16T00:13:45.217Z"}
+{"context":"WebsocketGateway","level":"info","message":"WebSocket Gateway initialized","timestamp":"2025-05-16T00:18:36.205Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"subscribe_address\" message","timestamp":"2025-05-16T00:18:36.212Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"unsubscribe_address\" message","timestamp":"2025-05-16T00:18:36.213Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"subscribe_transaction\" message","timestamp":"2025-05-16T00:18:36.214Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"unsubscribe_transaction\" message","timestamp":"2025-05-16T00:18:36.215Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"subscribe_blocks\" message","timestamp":"2025-05-16T00:18:36.215Z"}
+{"context":"WebSocketsController","level":"info","message":"WebsocketGateway subscribed to the \"unsubscribe_blocks\" message","timestamp":"2025-05-16T00:18:36.216Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/v1/auth}:","timestamp":"2025-05-16T00:18:36.220Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/auth/login, POST} route","timestamp":"2025-05-16T00:18:36.226Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/auth/register, POST} route","timestamp":"2025-05-16T00:18:36.228Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/auth/profile, GET} route","timestamp":"2025-05-16T00:18:36.230Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/auth/refresh, POST} route","timestamp":"2025-05-16T00:18:36.231Z"}
+{"context":"RoutesResolver","level":"info","message":"BlockchainController {/api/v1/blockchain}:","timestamp":"2025-05-16T00:18:36.232Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/info, GET} route","timestamp":"2025-05-16T00:18:36.233Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/blocks/latest, GET} route","timestamp":"2025-05-16T00:18:36.235Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/blocks/:height, GET} route","timestamp":"2025-05-16T00:18:36.237Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/blocks/hash/:hash, GET} route","timestamp":"2025-05-16T00:18:36.239Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/transactions/:id, GET} route","timestamp":"2025-05-16T00:18:36.241Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/transactions, POST} route","timestamp":"2025-05-16T00:18:36.242Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/addresses/:address, GET} route","timestamp":"2025-05-16T00:18:36.243Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/addresses/:address/transactions, GET} route","timestamp":"2025-05-16T00:18:36.245Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/addresses/:address/balance, GET} route","timestamp":"2025-05-16T00:18:36.246Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/validators, GET} route","timestamp":"2025-05-16T00:18:36.247Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/validators/:address, GET} route","timestamp":"2025-05-16T00:18:36.248Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/mempool, GET} route","timestamp":"2025-05-16T00:18:36.249Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/stats, GET} route","timestamp":"2025-05-16T00:18:36.249Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/blockchain/admin/status, GET} route","timestamp":"2025-05-16T00:18:36.250Z"}
+{"context":"RoutesResolver","level":"info","message":"HealthController {/api/v1/health}:","timestamp":"2025-05-16T00:18:36.250Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/v1/health, GET} route","timestamp":"2025-05-16T00:18:36.251Z"}
+{"context":"GraphQLModule","level":"info","message":"Mapped {/graphql, POST} route","timestamp":"2025-05-16T00:18:36.605Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2025-05-16T00:18:36.610Z"}

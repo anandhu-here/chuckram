@@ -1,0 +1,1 @@
+{"context":"NestApplication","level":"error","message":"Error: listen EADDRINUSE: address already in use :::3000","stack":[null],"timestamp":"2025-05-16T00:13:45.231Z"}

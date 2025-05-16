@@ -1,4 +1,4 @@
-import { Transaction, TransactionType } from '@digital-chuckram/types';
+import { Transaction, TransactionType } from './blockchain.types';
 
 // Currency denomination constants
 export const CASH_PER_CHUCKRAM = 16;

@@ -1,20 +1,28 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
+// apps/blockchain-node/src/main.ts
 
-import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
+import { ConfigService } from '@nestjs/config';
+import { Logger } from '@nestjs/common';
 import { AppModule } from './app/app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const globalPrefix = 'api';
-  app.setGlobalPrefix(globalPrefix);
-  const port = process.env.PORT || 3000;
+  const configService = app.get(ConfigService);
+  const logger = new Logger('Bootstrap');
+
+  // Get port from configuration, defaulting to 4000 (different from API Gateway)
+  const port = configService.get<number>('port') || 4000;
+
+  // Start the application
   await app.listen(port);
-  Logger.log(
-    `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
+
+  logger.log(`Blockchain Node started on port ${port}`);
+  logger.log(`Environment: ${configService.get<string>('environment')}`);
+  logger.log(`Network: ${configService.get<string>('network.name')}`);
+  logger.log(
+    `Genesis Block: ${
+      configService.get<string>('blockchain.genesisHash') || 'Not loaded'
+    }`
   );
 }
 

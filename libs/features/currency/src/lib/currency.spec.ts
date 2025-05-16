@@ -1,9 +1,6 @@
 import { CurrencyConverter } from './converter';
 import {
   CASH_PER_CHUCKRAM,
-  CHUCKRAMS_PER_FANAM,
-  FANAMS_PER_VARAHA,
-  CHUCKRAMS_PER_LAKH,
   CHUCKRAMS_PER_CRORE,
 } from '@digital-chuckram/types';
 

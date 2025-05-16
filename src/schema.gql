@@ -1,0 +1,166 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type AddressDetailsType {
+  address: String!
+  balance: String!
+  did: String
+  firstSeen: Int
+  isValidator: Boolean
+  lastSeen: Int
+  txCount: Int!
+}
+
+type BlockHeaderType {
+  height: Int!
+  merkleRoot: String!
+  previousHash: String!
+  timestamp: Int!
+  validatorAddress: String!
+  validatorSignature: String
+  version: Int!
+}
+
+type BlockInfoType {
+  chainId: String!
+  genesisHash: String!
+  height: Int!
+  lastBlockHash: String!
+  lastBlockTime: Int!
+  protocolVersion: String!
+  synced: Boolean!
+  syncedHeight: Int!
+  transactionCount: Int!
+  validatorCount: Int!
+}
+
+type BlockType {
+  hash: String!
+  header: BlockHeaderType!
+  nonce: Int!
+  size: Int!
+  transactionCount: Int!
+  transactions: [TransactionType!]!
+}
+
+"""
+The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSON
+
+type Mutation {
+  """Create transaction"""
+  createTransaction(input: TransactionInput!): TransactionType!
+}
+
+type NetworkStatsType {
+  activeValidators: Int!
+  averageBlockTime: Float!
+  blockHeight: Int!
+  circulatingSupply: String!
+  lastBlockTime: Int!
+  totalAccounts: Int!
+  totalSupply: String!
+  transactionCount: Int!
+  transactionsPerSecond: Int!
+  validatorCount: Int!
+}
+
+type Query {
+  """Get address balance"""
+  addressBalance(address: String!): String!
+
+  """Get address details"""
+  addressDetails(address: String!): AddressDetailsType!
+
+  """Get address transactions"""
+  addressTransactions(address: String!, limit: Int, offset: Int): [TransactionType!]!
+
+  """Get block by hash"""
+  blockByHash(hash: String!): BlockType!
+
+  """Get block by height"""
+  blockByHeight(height: Int!): BlockType!
+
+  """Get blockchain info"""
+  blockchainInfo: BlockInfoType!
+
+  """Get blockchain status (admin only)"""
+  blockchainStatus: BlockInfoType!
+
+  """Get latest blocks"""
+  latestBlocks(limit: Int): [BlockType!]!
+
+  """Get mempool transactions"""
+  mempoolTransactions(limit: Int, offset: Int): [TransactionType!]!
+
+  """Get network statistics"""
+  networkStats: NetworkStatsType!
+
+  """Get transaction by ID"""
+  transaction(id: String!): TransactionType!
+
+  """Get validator details"""
+  validatorDetails(address: String!): ValidatorType!
+
+  """Get validators"""
+  validators: [ValidatorType!]!
+}
+
+input TransactionInput {
+  amount: String!
+  data: JSON
+  fee: String!
+  from: String!
+  nonce: Int!
+  signature: String!
+  to: String!
+  type: TransactionTypeEnum!
+}
+
+type TransactionType {
+  amount: String!
+  blockHash: String
+  blockHeight: Int
+  confirmations: Int
+  data: JSON
+  fee: String!
+  from: String!
+  id: String!
+  isConfirmed: Boolean
+  nonce: Int!
+  signature: String!
+  timestamp: Int!
+  to: String!
+  type: TransactionTypeEnum!
+}
+
+enum TransactionTypeEnum {
+  BURN
+  FEE
+  IDENTITY_REGISTRATION
+  MINT
+  PROPOSAL
+  REWARD
+  TRANSFER
+  VALIDATOR_REGISTRATION
+  VOTE
+}
+
+type ValidatorType {
+  active: Boolean!
+  address: String!
+  lastActiveBlock: Int!
+  proposedBlocks: Int
+  registeredAt: Int!
+  stake: String
+  type: ValidatorTypeEnum!
+  uptimePercentage: Int
+  votingPower: Int
+}
+
+enum ValidatorTypeEnum {
+  CITIZEN
+  GOVERNMENT
+}
